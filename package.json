@@ -1,0 +1,34 @@
+{
+  "name": "@abacusprotocol/server-sdk",
+  "version": "0.1.0",
+  "description": "Abacus server SDK",
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "precommit": "npm run build",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abacusprotocol/abacus-sdk-js.git"
+  },
+  "author": "Abacus Team <team@abacusprotocol.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abacusprotocol/abacus-sdk/js/issues"
+  },
+  "homepage": "https://docs.abacusprotocol.com",
+  "devDependencies": {
+    "rollup": "^0.62.0",
+    "rollup-plugin-typescript2": "^0.15.1",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "@abacusprotocol/sdk-js": "^0.1.5",
+    "isomorphic-unfetch": "^2.0.0",
+    "sha3": "^1.2.2"
+  }
+}
