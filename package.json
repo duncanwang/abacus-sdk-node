@@ -3,6 +3,7 @@
   "version": "0.1.4",
   "description": "Abacus Node.js SDK",
   "main": "dist/bundle.js",
+  "module": "dist/bundle.es5.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "precommit": "npm run build",
@@ -23,11 +24,12 @@
   "homepage": "https://docs.abacusprotocol.com",
   "devDependencies": {
     "rollup": "^0.62.0",
+    "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-typescript2": "^0.15.1",
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@abacusprotocol/sdk-js": "^0.1.5",
+    "@abacusprotocol/sdk-js": "^0.1.8",
     "sha3": "^1.2.2"
   }
 }

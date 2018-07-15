@@ -1,0 +1,8 @@
+{
+  "name": "@abacusprotocol/abacus-sdk-node-example-hello-token",
+  "version": "0.1.0",
+  "description": "Example of using the SDK to deal with tokens.",
+  "main": "src/main.js",
+  "author": "Abacus Team <team@abacusprotocol.com>",
+  "license": "MIT"
+}
