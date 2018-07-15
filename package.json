@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@abacusprotocol/sdk-js": "^0.1.5",
-    "isomorphic-unfetch": "^2.0.0",
     "sha3": "^1.2.2"
   }
 }
