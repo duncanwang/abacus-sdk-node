@@ -1,7 +1,7 @@
 {
   "name": "@abacusprotocol/sdk-node",
   "version": "0.1.1",
-  "description": "Abacus server SDK",
+  "description": "Abacus Node.js  SDK",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "scripts": {
