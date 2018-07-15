@@ -1,4 +1,4 @@
-import SDK from "@abacusprotocol/sdk-js";
+import JavascriptSDK from "@abacusprotocol/sdk-js";
 const SHA3 = require("sha3");
 
 const sha3 = (input: string): string => {
@@ -7,7 +7,7 @@ const sha3 = (input: string): string => {
   return d.digest("hex");
 };
 
-class ServerSDK extends SDK {
+class NodeSDK extends JavascriptSDK {
   _apiSecret: string;
 
   constructor(params: {
@@ -42,4 +42,4 @@ class ServerSDK extends SDK {
   }
 }
 
-export default ServerSDK;
+export default NodeSDK;
