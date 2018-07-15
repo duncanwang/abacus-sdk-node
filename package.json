@@ -1,5 +1,5 @@
 {
-  "name": "@abacusprotocol/server-sdk",
+  "name": "@abacusprotocol/sdk-node",
   "version": "0.1.0",
   "description": "Abacus server SDK",
   "main": "dist/bundle.js",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abacusprotocol/abacus-sdk-js.git"
+    "url": "git+https://github.com/abacusprotocol/abacus-sdk-node.git"
   },
   "author": "Abacus Team <team@abacusprotocol.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/abacusprotocol/abacus-sdk/js/issues"
+    "url": "https://github.com/abacusprotocol/abacus-sdk-node/issues"
   },
   "homepage": "https://docs.abacusprotocol.com",
   "devDependencies": {
