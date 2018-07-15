@@ -25,7 +25,7 @@ class ServerSDK extends SDK {
   }
 
   async _sendRequest(path: string, mergeOpts: { [key: string]: any } = {}) {
-    const method = mergeOpts.method || "GET";
+    const method = (mergeOpts.method || "GET").toUpperCase();
     const url = `${this._apiBase}${path}`;
     const body = mergeOpts.body || "";
     const signature = sha3(`${method} ${url}${body}`.trim());
