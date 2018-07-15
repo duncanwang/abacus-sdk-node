@@ -1,10 +1,10 @@
 import JavascriptSDK from "@abacusprotocol/sdk-js";
-const SHA3 = require("sha3");
+const jsSHA = require("jssha/src/sha3");
 
 const sha3 = (input: string): string => {
-  const d = new SHA3.SHA3Hash();
+  const d = new jsSHA("SHA3-256", "TEXT");
   d.update(input);
-  return d.digest("hex");
+  return d.getHash("HEX");
 };
 
 class NodeSDK extends JavascriptSDK {
