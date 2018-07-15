@@ -29,8 +29,7 @@ class NodeSDK extends JavascriptSDK {
     const url = `${this._apiBase}${path}`;
     const body = mergeOpts.body || "";
     const signature = sha3(`${this._apiSecret}${method} ${url}${body}`.trim());
-
-    const res = await fetch(this._apiBase + url, {
+    const res = await fetch(url, {
       headers: {
         "content-type": "application/json",
         Authorization: "Token " + this._authToken,
