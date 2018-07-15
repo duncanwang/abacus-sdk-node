@@ -28,7 +28,7 @@ class ServerSDK extends SDK {
     const method = (mergeOpts.method || "GET").toUpperCase();
     const url = `${this._apiBase}${path}`;
     const body = mergeOpts.body || "";
-    const signature = sha3(`${method} ${url}${body}`.trim());
+    const signature = sha3(`${this._apiSecret}${method} ${url}${body}`.trim());
 
     const res = await fetch(this._apiBase + url, {
       headers: {
