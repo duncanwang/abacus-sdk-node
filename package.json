@@ -23,7 +23,7 @@
   },
   "homepage": "https://docs.abacusprotocol.com",
   "devDependencies": {
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.13",
     "prettier": "^1.13.7",
     "pretty-quick": "^1.6.0",
     "rollup": "^0.62.0",
