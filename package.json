@@ -32,7 +32,7 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@abacusprotocol/sdk-js": "^0.1.8",
+    "@abacusprotocol/sdk-js": "^0.1.17",
     "jssha": "^2.3.1"
   },
   "husky": {
