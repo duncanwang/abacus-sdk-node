@@ -3,6 +3,7 @@
     "target": "esnext",
     "module": "esnext",
     "sourceMap": true,
+    "declaration": true,
     "jsx": "react",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
