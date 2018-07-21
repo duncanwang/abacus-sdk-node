@@ -1,6 +1,6 @@
 {
   "name": "@abacusprotocol/sdk-node",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Abacus Node.js SDK",
   "main": "dist/bundle.js",
   "module": "dist/bundle.es5.js",
