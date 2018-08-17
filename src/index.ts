@@ -1,4 +1,7 @@
+const fetch = require("isomorphic-unfetch");
 import JavascriptSDK from "@abacusprotocol/sdk-js";
+import * as FormData from "form-data";
+import { ReadStream } from "fs";
 const jsSHA = require("jssha/src/sha3");
 
 const sha3 = (input: string): string => {
@@ -36,6 +39,34 @@ class NodeSDK extends JavascriptSDK {
         "X-Signature": signature
       },
       ...mergeOpts
+    });
+    return await res.json();
+  }
+
+  /**
+   * Uploads a file to an applicationn.
+   */
+  async uploadFile({
+    applicationId,
+    file
+  }: {
+    applicationId?: string;
+    file: ReadStream;
+  }) {
+    const appId = applicationId || this._applicationId;
+    if (!appId) {
+      throw new Error("No application id specified");
+    }
+    const form = new FormData();
+    form.append("file", file);
+    const url = `${this._apiBase}/applications/${appId}/files/upload`;
+    const res = await fetch(url, {
+      headers: {
+        "Content-Type": "multipart/formdata",
+        Authorization: "Token " + this._authToken
+      },
+      method: "POST",
+      body: form
     });
     return await res.json();
   }
