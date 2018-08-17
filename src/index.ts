@@ -1,4 +1,4 @@
-const fetch = require("isomorphic-unfetch");
+const fetch = require("node-fetch");
 import JavascriptSDK from "@abacusprotocol/sdk-js";
 import * as FormData from "form-data";
 import { ReadStream } from "fs";
@@ -62,7 +62,6 @@ class NodeSDK extends JavascriptSDK {
     const url = `${this._apiBase}/applications/${appId}/files/upload`;
     const res = await fetch(url, {
       headers: {
-        "Content-Type": "multipart/formdata",
         Authorization: "Token " + this._authToken
       },
       method: "POST",
